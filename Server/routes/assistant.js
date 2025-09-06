@@ -9,8 +9,10 @@ const router = express.Router();
 router.post("/", async (req, res) => {
   const { messages } = req.body;
 
-  // Retrieve relevant company info from MongoDB (or in-memory)
+  // Get the last user message
   const lastMsg = messages[messages.length - 1].content;
+
+  // Get context from the array-based dataset
   const context = await searchDocs(lastMsg);
 
   // Call OpenAI Responses API
