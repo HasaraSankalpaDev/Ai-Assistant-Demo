@@ -22,7 +22,7 @@ export async function searchDocs(query) {
 
     // UI/UX Design
     "Basic UI Design Package: LKR 5,000+. 1–3 UI screens, minimal modern design, responsive layouts, typography & color schemes, simple prototypes.",
-    "Multi-page UI & UX Package: LKR 25,000+. 5–10 screens/pages, interactive prototypes, wireframes, mobile-first design, asset handoff-ready.",
+    "Multi-page UI & UX Package: LKR 25,000+. 5–10 screens/pages, interactive prototypes, mobile-first design, asset handoff-ready.",
     "Premium UX/UI & Product Design Package: LKR 50,000+. Full web/app design, high-fidelity prototypes, UX research & testing, custom components, responsive & accessible design, optional motion/micro-interactions.",
 
     // Graphic Design Packages
@@ -32,7 +32,6 @@ export async function searchDocs(query) {
     "Logo Design: LKR 2,500+. Revisions included, print/web-ready.",
     "Illustrations: LKR 3,500+. Revisions included, print/web-ready.",
   ];
-
   // For now, return all docs joined
   // Later replace with embedding similarity search
   return docs.join("\n");
